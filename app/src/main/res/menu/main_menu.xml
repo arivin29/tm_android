@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Activity.MainActivity">
+    <item android:id="@+id/cari_ikan"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:layout_width="wrap_content" />
+
+    <item
+        android:id="@+id/pengaturan"
+        android:orderInCategory="200"
+        android:title="Pengaturan"
+        android:icon="@drawable/ic_build_black_24dp"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="300"
+        android:title="Bantuan"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/trash_db"
+        android:orderInCategory="300"
+        android:title="kosongkan db"
+        android:icon="@drawable/ic_sync_black_24dp"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context=".Activity.MainActivity"
+    android:background="#fefefe">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tool_bar"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|top">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:background="@color/bg_main">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="20dp">
+
+                                    <ImageView
+                                        android:layout_width="164dp"
+                                        android:layout_height="164dp"
+                                        android:id="@+id/icon_barcode"
+                                        android:layout_gravity="center_horizontal|top"
+                                        android:src="@drawable/barcode" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="Scan Barcode"
+                                        android:id="@+id/textView11"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textColor="#fff" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/id_barcode_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/input_id_barcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:numeric="integer"
+                                    android:text=""
+                                    android:hint="Code Barcode"
+                                    android:editable="true" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Nama Kapal"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/orange"
+                                android:id="@+id/nama_kapal"
+                                android:textSize="20dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/garis_bawah_biru"
+                                />
+
+                            <!--Cold storagw-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="match_parent"
+                                android:text="Cold Storage / UPI"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/no_izin_kapal"
+                                android:textColor="@color/orange"
+                                android:textSize="20dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/garis_bawah_biru"
+                                />
+
+                            <!--Alat Tangkap-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="match_parent"
+                                android:text="Alat Tangkap"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/alat_tangkap"
+                                android:textColor="@color/orange"
+                                android:textSize="20dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/garis_bawah_biru"
+                                />
+
+                            <!--Kode pelabuhan-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="match_parent"
+                                android:text="Kode Pelabuhan"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/hitam"
+                                android:textSize="16dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/garis_bawah_abu"
+                                />
+
+                            <!--Kode PIC-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="match_parent"
+                                android:text="PIC"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/hitam"
+                                android:textSize="16dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/garis_bawah_abu"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.47">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="@android:color/holo_blue_light">
+
+
+                <EditText android:id="@+id/cari_ikan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cari Ikan"
+                    android:height="2dp"
+                android:inputType="textVisiblePassword"
+                    android:padding="10dp" />
+
+                <ListView android:id="@+id/list_ikan" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.15"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--SEGMET 3-->
+        <FrameLayout
+            android:layout_width="346dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="top|left"
+                        android:layout_gravity="top|left">
+
+                        <TextView
+                            android:layout_width="193dp"
+                            android:layout_height="wrap_content"
+                            android:text="TARE (kg)"
+                            android:textSize="20dp"
+                            android:id="@+id/textView" />
+
+                        <EditText
+                            android:layout_width="188dp"
+                            android:layout_height="79dp"
+                            android:id="@+id/editText"
+                            android:text="0"
+                            android:textSize="50dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Detail Timbang"
+                            android:id="@+id/textView4"
+                            android:foreground="@drawable/garis_bawah_biru" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center_vertical|right"
+                        android:layout_gravity="right"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="186dp"
+                            android:layout_height="wrap_content"
+                            android:text="Berat Ikan (kg)"
+                            android:textSize="20dp"
+                            android:id="@+id/textView2"
+                            android:layout_gravity="right"
+                            android:clickable="false"
+                            android:gravity="right" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hasil_timbang"
+                            android:text="000"
+                            android:padding="10dp"
+                            android:textColor="#b86e4c"
+                            android:textSize="50dp"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Pilih Timbangnan"
+                            android:id="@+id/statusBt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--SIMPAN-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.03"
+                        android:weightSum="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/label_faktor_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/input_faktor_a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:hint="Faktor Konversi A" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/label_faktor_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/input_faktor_b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text=""
+                                android:hint="Faktor Konversi B" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/label_harga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/input_tujuan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text=""
+                                android:hint="Tujuan Ikan" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/label_tujuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/input_harga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text=""
+                                android:inputType="number"
+                                android:hint="Perkiran Harga (Rp/Kg)" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/label_pilihan_ikan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/pilihIkan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text=""
+                                android:editable="false"
+                                android:hint="Nama Ikan" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.03"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Hasil Timbang"
+                            android:id="@+id/textView5"
+                            android:background="@drawable/garis_bawah_biru" />
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="225dp"
+                            android:padding="10dp"
+                            android:id="@+id/list_hasil_timbang"/>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:weightSum="1"
+                android:focusable="true"
+                android:padding="10dp"
+                android:gravity="bottom|right"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Simpan ke server"
+                    android:id="@+id/textView3"
+                    android:foregroundGravity="right"
+                    android:gravity="right" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:drawableLeft="@drawable/ic_cloud_upload_black_24dp"
+                    android:id="@+id/btn_simpan" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+</RelativeLayout>
